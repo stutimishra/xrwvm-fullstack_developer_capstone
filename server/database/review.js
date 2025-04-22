@@ -1,9 +1,9 @@
-'use strict';
+/* jshint node: true, esversion: 6 */
 
-var mongoose = require('mongoose');
-
-// Using function form of "use strict"
 (function () {
+  'use strict';
+
+  var mongoose = require('mongoose');
   var Schema = mongoose.Schema;
 
   var reviewSchema = new Schema({
