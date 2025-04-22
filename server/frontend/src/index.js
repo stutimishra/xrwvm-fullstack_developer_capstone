@@ -1,15 +1,16 @@
 /* jshint esversion: 6, browser: true, strict: true */
+(function () {
+  'use strict';
 
-'use strict';
+  import React from 'react';
+  import ReactDOM from 'react-dom/client';
+  import App from './App';
+  import { BrowserRouter } from 'react-router-dom';
 
-const React = require('react');
-const ReactDOM = require('react-dom');
-const App = require('./App');
-const { BrowserRouter } = require('react-router-dom');
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  React.createElement(BrowserRouter, null,
-    React.createElement(App, null)
-  )
-);
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  );
+})();
