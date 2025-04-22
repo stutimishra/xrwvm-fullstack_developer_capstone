@@ -2,9 +2,13 @@ name: 'Lint Code'
 
 on:
   push:
-    branches: [master, main]
+    branches:
+      - master
+      - main
   pull_request:
-    branches: [master, main]
+    branches:
+      - master
+      - main
 
 jobs:
   lint_python:
@@ -29,7 +33,7 @@ jobs:
 
       - name: Run Linter
         run: |
-          find . -name "*.py" -exec flake8 {} +
+          flake8 .
           echo "Linted all the python files successfully"
 
   lint_js:
@@ -49,5 +53,5 @@ jobs:
 
       - name: Run Linter
         run: |
-          find . -name "*.js" -exec jshint {} +
+          jshint .
           echo "Linted all the js files successfully"
