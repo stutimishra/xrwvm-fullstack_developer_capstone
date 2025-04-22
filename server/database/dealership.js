@@ -1,7 +1,7 @@
+/* jshint esversion: 6, node: true */
 'use strict';
 
 const mongoose = require('mongoose');
-
 const { Schema } = mongoose;
 
 const dealershipSchema = new Schema({
