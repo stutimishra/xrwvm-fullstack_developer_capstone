@@ -1,4 +1,4 @@
-/* jshint esversion: 6, node: true, strict: function */
+/* jshint esversion: 6, browser: true, strict: true */
 
 'use strict';
 
